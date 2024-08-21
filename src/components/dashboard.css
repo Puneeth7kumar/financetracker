@@ -1,0 +1,102 @@
+.dashboard-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-menu {
+    position: relative;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.profile-menu:hover .dropdown-content {
+    display: block;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 200px;
+}
+
+.card:hover {
+    background-color: #48b048;
+    color: white;
+}
+
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-chart,
+.transaction-history {
+    width: 48%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.line-chart h3,
+.transaction-history h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.transaction-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction-history li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
