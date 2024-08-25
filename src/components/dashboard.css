@@ -81,6 +81,7 @@
     white-space: nowrap;
 }
 
+
 .nav-button:hover {
     background-color: rgba(34, 79, 136, 0.9);
     transform: translateY(-2px);
