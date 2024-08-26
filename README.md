@@ -22,18 +22,18 @@ A comprehensive personal finance tracker that helps you manage your income, expe
 ## Screenshots
 
 ### Login and Registration
-![Login](‪./src/components/images/login.png)
-![Registration](‪./screenshots/register.png)
+![Login](‪src/components/screenshots/login.png)
+![Registration](src/components/screenshots/register.png)
 
 ### Dashboard Overview
-![Dashboard](‪./screenshots/dashboard.png)
+![Dashboard](src/components/screenshots/dashboard.png)
 
 ### Add Income/Expense
-![Add Income](‪./screenshots/addIncome.png)
-![Add Expense](‪./screenshots/addExpense.png)
+![Add Income](‪src/components/screenshots/addIncome.png)
+![Add Expense](‪src/components/screenshots/addExpense.png)
 
 ### Spending Analytics
-![Analytics](‪./screenshots/SpendingTransactions.png)
+![Analytics](‪src/components/screenshots/SpendingTransactions.png)
 
 ## Technologies Used
 
