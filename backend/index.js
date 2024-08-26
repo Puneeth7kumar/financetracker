@@ -3,10 +3,9 @@ const bodyParser = require('body-parser');
 const admin = require('firebase-admin');
 const cors = require('cors');
 
-// Initialize express app
+
 const app = express();
 
-// Use middleware
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -16,7 +15,7 @@ admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
 });
 
-// Define routes
+
 app.post('/api/auth/login', async (req, res) => {
     const { email, password } = req.body;
 
@@ -31,7 +30,7 @@ app.post('/api/auth/login', async (req, res) => {
 app.post('/api/transactions', async (req, res) => {
     const { userId, amount, type, category, date } = req.body;
 
-    // Ensure 'type' is either 'Income' or 'Expense'
+  
     if (!['Income', 'Expense'].includes(type)) {
         return res.status(400).json({ error: 'Invalid transaction type' });
     }
@@ -46,7 +45,7 @@ app.post('/api/transactions', async (req, res) => {
             timestamp: admin.firestore.FieldValue.serverTimestamp()
         };
 
-        // Add the transaction to Firestore
+      
         await admin.firestore()
             .collection('transactions')
             .add(transactionData);
@@ -57,7 +56,7 @@ app.post('/api/transactions', async (req, res) => {
     }
 });
 
-// Route to get all transactions for a user
+
 app.get('/api/transactions/:userId', async (req, res) => {
     const { userId } = req.params;
 
