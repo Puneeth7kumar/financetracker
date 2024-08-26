@@ -2,7 +2,7 @@
 
 ![Logo](./src/components/images/logo1.png)
 
-A comprehensive personal finance tracker that helps you manage your income, expenses, and budget. Built with a modern frontend using React.js, a robust backend with Node.js, and Firebase for authentication and database management. This project also integrates Redux for state management and features rich analytics to help users track their spending.
+A comprehensive personal finance tracker that helps you manage your income, expenses, and budget. Built with a modern frontend using React.js, a robust backend with Node.js, and Firebase for authentication and database management.This project also integrates Redux for state management and features rich analytics to help users track their spending.
 
 ## Features
 
@@ -11,11 +11,11 @@ A comprehensive personal finance tracker that helps you manage your income, expe
   - Google Sign-In for quick access.
 - **Dashboard**:
   - View total income, total expenses, and current balance.
-  - Access recent transactions with options to edit or delete.
+  - Access recent transactions with options to edit and delete.
 - **Add Income/Expenses**:
   - Popup forms for entering details such as amount, category, date, and description.
 - **Spending Analytics**:
-  - Visualize spending habits with bar, line, and circle graphs.
+  - Visualize spending habits with bar, line, and pie chart.
 - **Responsive Design**: 
   - Optimized for both desktop and mobile devices.
 
@@ -42,8 +42,8 @@ A comprehensive personal finance tracker that helps you manage your income, expe
 - **Database**: Firebase Firestore
 - **Authentication**: Firebase Authentication (Email/Password, Google Sign-In)
 - **State Management**: Redux
-- **Styling**: CSS (Include any libraries like Bootstrap, Material-UI if used)
-- **Graphs and Charts**: Chart.js, D3.js (or any specific library used for graphs)
+- **Styling**: CSS 
+- **Graphs and Charts**: Chart.js, D3.js 
 
 ## Installation
 
