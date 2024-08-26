@@ -22,18 +22,18 @@ A comprehensive personal finance tracker that helps you manage your income, expe
 ## Screenshots
 
 ### Login and Registration
-![Login](‪D:\Pictures\AnyDesk\login.png)
-![Registration](path/to/registration-screenshot.png)
+![Login](‪./screenshots/login)
+![Registration](‪./screenshots/register)
 
 ### Dashboard Overview
-![Dashboard](path/to/dashboard-screenshot.png)
+![Dashboard](‪./screenshots/dashboard)
 
 ### Add Income/Expense
-![Add Income](path/to/add-income-screenshot.png)
-![Add Expense](path/to/add-expense-screenshot.png)
+![Add Income](‪./screenshots/addIncome)
+![Add Expense](‪./screenshots/addExpense)
 
 ### Spending Analytics
-![Analytics](path/to/analytics-screenshot.png)
+![Analytics](‪./screenshots/SpendingTransactions)
 
 ## Technologies Used
 
@@ -93,9 +93,12 @@ A comprehensive personal finance tracker that helps you manage your income, expe
 4. **Edit/Delete Transactions**: Manage your transactions easily through the dashboard.
 5. **Analyze Spending**: Use the provided graphs to get insights into your financial habits.
 
+## Live Website:
+Link: https://smartbudgetplan.web.app
+
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Puneeth Kumar NNM23MC107
 
 ## License
 
