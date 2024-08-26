@@ -22,7 +22,7 @@ A comprehensive personal finance tracker that helps you manage your income, expe
 ## Screenshots
 
 ### Login and Registration
-![Login](‪./screenshots/login.png)
+![Login](‪./src/components/images/login.png)
 ![Registration](‪./screenshots/register.png)
 
 ### Dashboard Overview
