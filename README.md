@@ -1,6 +1,6 @@
 # Personal Finance Tracker
 
-![Logo](path/to/your/logo.png)
+![Logo](D:\Pictures\AnyDesk\Screenshot 2024-08-25 113622.png)
 
 A comprehensive personal finance tracker that helps you manage your income, expenses, and budget. Built with a modern frontend using React.js, a robust backend with Node.js, and Firebase for authentication and database management. This project also integrates Redux for state management and features rich analytics to help users track their spending.
 
@@ -22,7 +22,7 @@ A comprehensive personal finance tracker that helps you manage your income, expe
 ## Screenshots
 
 ### Login and Registration
-![Login](path/to/login-screenshot.png)
+![Login](‪D:\Pictures\AnyDesk\login.png)
 ![Registration](path/to/registration-screenshot.png)
 
 ### Dashboard Overview
