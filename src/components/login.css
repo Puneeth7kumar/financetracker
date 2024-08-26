@@ -11,7 +11,6 @@ html {
     font-family: 'Arial', sans-serif;
 }
 
-/* Scope styles under .login-section to avoid affecting other parts of the app */
 .login-section {
     position: relative;
     width: 100%;
