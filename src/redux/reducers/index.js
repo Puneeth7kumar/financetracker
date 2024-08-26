@@ -4,6 +4,6 @@ import userReducer from './userSlice';
 
 const rootreducer = combineReducers({
     auth: authReducer,
-    user: userReducer
+    // user: userReducer
 });
 export default rootreducer

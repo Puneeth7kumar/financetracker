@@ -481,7 +481,6 @@ function Dashboard() {
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
 
-    const limit = 1000;
 
     useEffect(() => {
         if (user) {
@@ -631,7 +630,7 @@ function Dashboard() {
             <div className="dashboard-container">
                 {/* Navigation Bar */}
                 <nav className="navbar">
-                    <img src="https://www2.online-converting.com/upload/api_951da33cf8/result.jpg" alt="Logo" class="logo" />
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg1Xusd24wnK3m5HnX1riOOC0oX4W2HalHt1OVIretqHfJd4QtbjXkahfKbhaGpnQO5i0Qv2pE4XDDMntwBKUEuue24NuKvChwXctbyNsv3phcq40M3w3s41TWQ8_rQshvVcFvEnvSWBh9627s8VYS9kJX-t1h7rEkLY4bBvliihnjBmMisCJcfgXCdBiE" alt="Logo" class="logo" />
 
 
                     <div className="nav-links">
@@ -643,7 +642,7 @@ function Dashboard() {
 
                     </div>
                     <div className="profile-menu">
-                        <button className="logout-button" onClick={handleLogout}>Logout</button>
+                        <button className="nav-button" onClick={handleLogout}>Logout</button>
                     </div>
                 </nav>
 
@@ -689,7 +688,7 @@ function Dashboard() {
                     <h3>Recent Transactions</h3>
                     <ul className="transaction-list">
                         {transactions.map((transaction) => (
-                            <li key={transaction.id} className={`transaction-item ${transaction.amount > limit ? 'highlighted' : ''}`}>
+                            <li key={transaction.id} className={`transaction-item ${transaction.amount > incomeData ? 'highlighted' : ''}`}>
                                 <span>{transaction.category}</span>
                                 <span>{transaction.date}</span>
                                 <span className={`amount ${transaction.type.toLowerCase()}`}>

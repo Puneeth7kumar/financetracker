@@ -4,25 +4,34 @@
     box-sizing: border-box;
 }
 
-section {
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Scope styles under .login-section to avoid affecting other parts of the app */
+.login-section {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #3586ff;
+    background: linear-gradient(135deg, #2a74eb, #3b97f5);
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.login-container {
+.login-section .login-container {
     position: relative;
-    max-width: 400px;
-    padding: 30px;
-    border: 1px solid #ddd;
+    max-width: 450px;
+
+    width: 90%;
+    padding: 35px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: linear-gradient(135deg, #eae4f0, #b7ccef);
     animation: fadeIn 1s ease-in-out;
     z-index: 1001;
 }
@@ -39,86 +48,114 @@ section {
     }
 }
 
-h2 {
+.login-section h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Arial', sans-serif;
     color: #333;
 }
 
-.form-group {
+.login-section .form-group {
     margin-bottom: 20px;
 }
 
-.form-group label {
+.login-section .form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
 }
 
-.form-group input {
+.login-section .form-group input {
     width: 100%;
-    padding: 12px;
+    padding: 13px;
     border: 1px solid #ddd;
     border-radius: 8px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-group input:focus {
+.login-section .form-group input:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     outline: none;
 }
 
-button {
+.login-section button {
     width: 100%;
-    padding: 12px;
+    padding: 13px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
 }
 
-button[type="submit"] {
+.login-section .primary-btn {
     background-color: #007bff;
     color: #fff;
 }
 
-button[type="submit"]:hover {
+.login-section .primary-btn:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
 
-button:last-of-type {
-    background-color: #4285F4;
+.login-section .google-btn {
+    background-color: #db4437;
     color: #fff;
     margin-top: 10px;
 }
 
-button:last-of-type:hover {
-    background-color: #357ae8;
+.login-section .google-btn:hover {
+    background-color: #c33d2e;
     transform: scale(1.05);
 }
 
-.message,
-.error {
+.login-section .social-login {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.login-section .error {
     text-align: center;
     margin-top: 10px;
+    color: #dc3545;
     font-size: 14px;
     font-weight: bold;
 }
 
-.message {
-    color: #28a745;
+.login-section .redirect-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
 }
 
-.error {
-    color: #dc3545;
+.login-section .redirect-text a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-section .air {
+.login-section .redirect-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-section .login-container {
+        padding: 20px;
+    }
+
+    .login-section .social-login {
+        flex-direction: column;
+    }
+
+    .login-section button {
+        margin-top: 10px;
+    }
+}
+
+.login-section .air {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -128,7 +165,7 @@ section .air {
     background-size: 1000px 100px;
 }
 
-section .air.air1 {
+.login-section .air.air1 {
     animation: wave 30s linear infinite;
     z-index: 1000;
     opacity: 1;
@@ -136,7 +173,7 @@ section .air.air1 {
     bottom: 0;
 }
 
-section .air.air2 {
+.login-section .air.air2 {
     animation: wave2 15s linear infinite;
     z-index: 999;
     opacity: 0.5;
@@ -144,7 +181,7 @@ section .air.air2 {
     bottom: 10px;
 }
 
-section .air.air3 {
+.login-section .air.air3 {
     animation: wave 30s linear infinite;
     z-index: 998;
     opacity: 0.2;
@@ -152,7 +189,7 @@ section .air.air3 {
     bottom: 15px;
 }
 
-section .air.air4 {
+.login-section .air.air4 {
     animation: wave2 5s linear infinite;
     z-index: 997;
     opacity: 0.7;

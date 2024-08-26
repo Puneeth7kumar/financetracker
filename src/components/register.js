@@ -23,7 +23,7 @@ function Register() {
     };
 
     return (
-        <section>
+        <section className="login-section">
             <div className="login-container">
                 <h2>Register</h2>
                 <form onSubmit={handleRegister}>
@@ -47,11 +47,11 @@ function Register() {
                             placeholder="Password"
                         />
                     </div>
-                    <button type="submit">Register</button>
+                    <button type="submit" className="primary-btn">Register</button>
                 </form>
                 {error && <p className="error">{error}</p>}
-                <p>
-                    Already have a Account? <a href="/login">Click here Login</a>
+                <p className="redirect-text">
+                    Already have an account? <a href="/login">Click here</a>
                 </p>
             </div>
             <div className='air air1'></div>

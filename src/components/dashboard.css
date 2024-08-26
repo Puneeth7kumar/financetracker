@@ -69,21 +69,24 @@
     /* Adjusted for smaller screens */
 }
 
+
 .nav-button {
-    background-color: rgba(57, 109, 177, 0.9);
+    background-color: rgba(69, 144, 241, 0.9);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 30px;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     white-space: nowrap;
+    font-size: large;
+
 }
 
 
 .nav-button:hover {
-    background-color: rgba(34, 79, 136, 0.9);
+    background-color: rgba(121, 177, 251, 0.9);
     transform: translateY(-2px);
 }
 
@@ -178,7 +181,8 @@
     height: 350px;
     background: #f9f9f9;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
     padding: 20px;
     display: flex;
     align-items: center;
@@ -216,6 +220,7 @@
     .chart-item {
         max-width: 100%;
         margin-bottom: 20px;
+
     }
 }
 
@@ -242,6 +247,8 @@
         /* Make buttons take available space */
         display: flex;
         justify-content: center;
+
+
     }
 
     .nav-button,
@@ -254,6 +261,10 @@
         /* Adjust font size for mobile */
         padding: 8px 12px;
         /* Reduce padding for smaller screens */
+
+
+
+
     }
 
     .nav-links,
@@ -312,7 +323,7 @@
     /* Increased for more visible items */
     overflow-y: auto;
     /* Enable scrolling */
-    border: 1px solid #ddd;
+
     /* Adds a subtle border to contain the list */
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -327,11 +338,13 @@
     padding: 15px 20px;
     background-color: #cee5f3;
     /* Changed to white for a clean look */
-    border-bottom: 1px solid #000000;
+    border-bottom: 2px solid #39a4f6;
     /* Subtle border between items */
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     border-radius: 15px;
     position: relative;
+    margin-bottom: 10px;
+
 }
 
 .transaction-item:last-child {
@@ -372,13 +385,12 @@
 /* Buttons */
 /* Shared Button Styles */
 /* Shared Button Styles */
-.edit-button,
-.delete-button {
-    background-color: #f1f1f1;
+.edit-button {
+    background-color: #5aedad;
     /* Light gray background for a clean look */
     border: 1px solid #ccc;
     /* Light border for a defined but subtle look */
-    padding: 8px 16px;
+    padding: 10px 10px;
     /* Adequate padding for better visibility and clickability */
     border-radius: 8px;
     /* Slightly more rounded corners for a modern design */
@@ -388,38 +400,68 @@
     font-weight: 500;
     /* Slightly bolder font for better readability */
     margin-left: 10px;
+    transform: translateY(-10px);
     /* Space between buttons */
-    min-width: 75px;
+    min-width: 90px;
+}
+
+.delete-button {
+    background-color: #f1f1f1;
+    /* Light gray background for a clean look */
+    border: 1px solid #ccc;
+    /* Light border for a defined but subtle look */
+    padding: 10px 10px;
+    /* Adequate padding for better visibility and clickability */
+    border-radius: 8px;
+    /* Slightly more rounded corners for a modern design */
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    /* Slightly bolder font for better readability */
+    margin-left: 10px;
+
+
+    transform: translateY(-10px);
+    /* Adjust the value to move the button up */
+
+
+    /* Space between buttons */
+    min-width: 90px;
     /* Consistent button width */
 }
 
 /* Edit Button */
 .edit-button {
-    color: #388e3c;
+    color: #edf1ed;
     /* Darker green for better contrast */
-    background-color: #e8f5e9;
+    background-color: #5ee85e;
     /* Light green background */
     border-color: #c8e6c9;
+
     /* Green border */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .edit-button:hover {
-    background-color: #c8e6c9;
+    background-color: #c1ecc3;
     /* Darker shade of green on hover */
-    color: #2e7d32;
+    color: #e3efe4;
     /* Darker text color on hover */
-    border-color: #81c784;
+    border-color: #d9edda;
+
     /* Slightly more saturated border on hover */
 }
 
 /* Delete Button */
 .delete-button {
-    color: #2fbdd3;
+    color: #fafcfd;
     /* Darker red for better contrast */
-    background-color: #ffebee;
+    background-color: #7fb0fa;
     /* Light red background */
     border-color: #ffcdd2;
     /* Red border */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .delete-button:hover {

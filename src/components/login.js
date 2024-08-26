@@ -32,7 +32,7 @@ function Login() {
     };
 
     return (
-        <section>
+        <section className="login-section">
             <div className="login-container">
                 <h2>Login</h2>
                 <form onSubmit={handleLogin}>
@@ -56,12 +56,15 @@ function Login() {
                             placeholder="Password"
                         />
                     </div>
-                    <button type="submit">Login</button>
+                    <button type="submit" className="primary-btn">Login</button>
                 </form>
-                <button onClick={handleGoogleLogin}>Login with Google</button>
+                <div className="social-login">
+                    <button onClick={handleGoogleLogin} className="google-btn">Login with Google</button>
+                    <button onClick={handleGoogleLogin} className="google-btn">Sign Up with Google</button>
+                </div>
                 {error && <p className="error">{error}</p>}
-                <p>
-                    New user? <a href="/register">Click here to create a new account</a>
+                <p className="redirect-text">
+                    New user? <a href="/register">Click here</a>
                 </p>
             </div>
             <div className='air air1'></div>
