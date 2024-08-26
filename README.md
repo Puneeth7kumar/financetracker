@@ -1,6 +1,6 @@
 # Personal Finance Tracker
 
-![Logo](./src/components/images/logo1/png)
+![Logo](./src/components/images/logo1.png)
 
 A comprehensive personal finance tracker that helps you manage your income, expenses, and budget. Built with a modern frontend using React.js, a robust backend with Node.js, and Firebase for authentication and database management. This project also integrates Redux for state management and features rich analytics to help users track their spending.
 
